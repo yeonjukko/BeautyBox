@@ -1,13 +1,9 @@
-package layout;
+package com.beautybox.layout;
 
-import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.app.FragmentStatePagerAdapter;
-import android.support.v4.view.PagerAdapter;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -34,7 +30,7 @@ public class A1Fragment extends Fragment {
             rootView = inflater.inflate(R.layout.fragment_a1, container, false);
             VerticalViewPager viewPager = (VerticalViewPager) rootView.findViewById(R.id.verticalViewPager);
             viewPager.setPageTransformer(true, new StackTransformer());
-            viewPager.setAdapter(new PagerAdapter(getActivity().getSupportFragmentManager()));
+            viewPager.setAdapter(new PagerAdapter(getChildFragmentManager()));
         }
         return rootView;
     }

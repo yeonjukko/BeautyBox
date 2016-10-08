@@ -2,8 +2,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/a31"
-    tools:context="layout.A31Fragment">
+    android:background="#dd811097"
+
+    tools:context=".layout.A31Fragment">
 
     <!-- TODO: Update blank fragment layout -->
 

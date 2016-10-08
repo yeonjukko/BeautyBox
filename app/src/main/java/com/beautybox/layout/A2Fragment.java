@@ -1,7 +1,5 @@
-package layout;
+package com.beautybox.layout;
 
-import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -10,13 +8,12 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import com.beautybox.R;
 
 import me.kaelaela.verticalviewpager.VerticalViewPager;
 import me.kaelaela.verticalviewpager.transforms.StackTransformer;
 
-public class A3Fragment extends Fragment {
+public class A2Fragment extends Fragment {
     private View rootView;
     private final int PAGE_SIZE = 3;
 
@@ -24,21 +21,21 @@ public class A3Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        Log.d("test", "a2");
+
 
         if (rootView == null) {
-            rootView = inflater.inflate(R.layout.fragment_a3, container, false);
+            rootView = inflater.inflate(R.layout.fragment_a2, container, false);
             VerticalViewPager viewPager = (VerticalViewPager) rootView.findViewById(R.id.verticalViewPager);
             viewPager.setPageTransformer(true, new StackTransformer());
-            viewPager.setAdapter(new PagerAdapter(getActivity().getSupportFragmentManager()));
+            viewPager.setAdapter(new PagerAdapter(getChildFragmentManager()));
         }
         return rootView;
     }
 
     private class PagerAdapter extends FragmentPagerAdapter {
-        private Fragment a31Fragment;
-        private Fragment a32Fragment;
-        private Fragment a33Fragment;
+        private Fragment a21Fragment;
+        private Fragment a22Fragment;
+        private Fragment a23Fragment;
 
         public PagerAdapter(FragmentManager fm) {
             super(fm);
@@ -49,21 +46,23 @@ public class A3Fragment extends Fragment {
             // 해당하는 page의 Fragment를 생성합니다.
             switch (position) {
                 case 0:
-                    if (a31Fragment == null) {
-                        a31Fragment = new A31Fragment();
+                    Log.d("test", "a2");
+
+                    if (a21Fragment == null) {
+                        a21Fragment = new A21Fragment();
                     }
-                    return a31Fragment;
+                    return a21Fragment;
                 case 1:
-                    if (a32Fragment == null) {
-                        a32Fragment = new A32Fragment();
+                    if (a22Fragment == null) {
+                        a22Fragment = new A22Fragment();
                     }
-                    return a32Fragment;
+                    return a22Fragment;
 
                 case 2:
-                    if (a33Fragment == null) {
-                        a33Fragment = new A33Fragment();
+                    if (a23Fragment == null) {
+                        a23Fragment = new A23Fragment();
                     }
-                    return a33Fragment;
+                    return a23Fragment;
 
             }
             return null;
@@ -77,3 +76,4 @@ public class A3Fragment extends Fragment {
     }
 
 }
+

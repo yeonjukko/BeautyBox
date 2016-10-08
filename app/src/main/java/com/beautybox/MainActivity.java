@@ -1,17 +1,16 @@
 package com.beautybox;
 
+import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 
-import layout.A1Fragment;
-import layout.A2Fragment;
-import layout.A3Fragment;
+import com.beautybox.layout.A1Fragment;
+import com.beautybox.layout.A2Fragment;
+import com.beautybox.layout.A3Fragment;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BeautyBoxActivity {
     private static final int PAGE_SIZE = 3;
     private ViewPager mViewPager;
 
@@ -22,7 +21,6 @@ public class MainActivity extends AppCompatActivity {
 
         mViewPager = (ViewPager) findViewById(R.id.viewPager);
         mViewPager.setAdapter(new PagerAdapter(getSupportFragmentManager()));
-
 
     }
 

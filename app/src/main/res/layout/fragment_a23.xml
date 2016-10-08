@@ -2,8 +2,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/a23"
-    tools:context="layout.A23Fragment">
+    android:background="#dd02314d"
+
+    tools:context=".layout.A23Fragment">
 
 
 
