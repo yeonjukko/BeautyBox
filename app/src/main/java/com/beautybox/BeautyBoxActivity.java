@@ -3,6 +3,8 @@ package com.beautybox;
 import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 
+import com.tsengvn.typekit.TypekitContextWrapper;
+
 
 /**
  * Created by yeonjukko on 2016. 10. 6..

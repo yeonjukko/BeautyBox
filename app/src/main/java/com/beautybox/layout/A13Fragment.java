@@ -28,15 +28,16 @@ public class A13Fragment extends Fragment {
             recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
             recyclerView.setHasFixedSize(true);
             items = new ArrayList<>();
-            items.add(new CosmeticModel("Georgio Armani", "Blushing Fabric \n#01 Petal Coral", false));
-            items.add(new CosmeticModel("Make Up Forever", "Aqua Brown \n#15 Blond", false));
-            items.add(new CosmeticModel("Shine Easy Glam", "Eye Shadow Palette 2", false));
-            items.add(new CosmeticModel("ARITAUM", "Micro Mascara \n#01 Noir Black", false));
-            items.add(new CosmeticModel("Pro 8 Chung Dam", "Stay On Gel Eyeliner \nDark Brown", false));
-            items.add(new CosmeticModel("VDL", "Brightening Tone Concealer \n#A201", false));
-            items.add(new CosmeticModel("Missha", "SILKY LASTRING LIP PENCIL \n#ANTIQUE BOX", false));
-            items.add(new CosmeticModel("Estee Lauder", "Double Wear Cushion Foundation \nCool Bone", false));
-            items.add(new CosmeticModel("MAC", "Mineralize Skin Finish \nLightscapade", false));
+            items.add(new CosmeticModel("Georgio Armani", "Blushing Fabric \n#01 Petal Coral", false,R.drawable.ic_item_1));
+            items.add(new CosmeticModel("Shine Easy Glam", "Eye Shadow Palette 2", false,R.drawable.ic_item_2));
+            items.add(new CosmeticModel("ARITAUM", "Micro Mascara \n#01 Noir Black", false,R.drawable.ic_item_3));
+            items.add(new CosmeticModel("Pro 8 Chung Dam", "Stay On Gel Eyeliner \nDark Brown", false,R.drawable.ic_item_4));
+            items.add(new CosmeticModel("VDL", "Brightening Tone Concealer \n#A201", false,R.drawable.ic_item_5));
+            items.add(new CosmeticModel("Missha", "SILKY LASTRING LIP PENCIL \n#ANTIQUE BOX", false,R.drawable.ic_item_6));
+            items.add(new CosmeticModel("Estee Lauder", "Double Wear Cushion Foundation \nCool Bone", false,R.drawable.ic_item_7));
+            items.add(new CosmeticModel("CLIO", "Virgin Kiss Tinted Lip \n# 13", false,R.drawable.ic_item_9));
+            items.add(new CosmeticModel("Make Up Forever", "Aqua Brown \n#15 Blond", false,R.drawable.ic_item_9));
+            items.add(new CosmeticModel("MAC", "Mineralize Skin Finish \nLightscapade", false,R.drawable.ic_item_10));
 
             recyclerView.setAdapter(new CosmeticRecyclerViewAdapter(this, items));
 

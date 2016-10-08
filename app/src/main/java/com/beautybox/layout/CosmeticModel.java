@@ -10,13 +10,8 @@ public class CosmeticModel {
     private String cosmeticName;
     private String cosmeticDescription;
     private boolean isChecked = false;
-    private int imagePath = R.mipmap.ic_launcher;
+    private int imagePath;
 
-    CosmeticModel(String cosmeticName, String cosmeticDescription, boolean isChecked){
-        this.cosmeticName = cosmeticName;
-        this.cosmeticDescription = cosmeticDescription;
-        this.isChecked = isChecked;
-    }
 
     CosmeticModel(String cosmeticName, String cosmeticDescription, boolean isChecked, int imagePath){
         this.cosmeticName = cosmeticName;

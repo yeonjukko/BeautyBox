@@ -1,6 +1,7 @@
 package com.beautybox.layout;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -20,9 +21,17 @@ public class A12Fragment extends Fragment {
 
         if (rootView == null) {
             rootView = inflater.inflate(R.layout.fragment_a12, container, false);
+            rootView.findViewById(R.id.videoView).setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    String url = "http://simple.jongrakko.net/video/A1-2.mp4";
+                    Intent intent = new Intent(Intent.ACTION_VIEW);
+                    intent.setDataAndType(Uri.parse(url),"video/*");
+                    startActivity(intent);
+                }
+            });
 
         }
-        Log.d("test",this.getActivity().getLocalClassName());
 
         return rootView;
 
