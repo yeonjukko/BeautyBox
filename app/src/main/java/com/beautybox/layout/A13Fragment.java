@@ -35,7 +35,7 @@ public class A13Fragment extends Fragment {
             items.add(new CosmeticModel("VDL", "Brightening Tone Concealer \n#A201", false,R.drawable.ic_item_5));
             items.add(new CosmeticModel("Missha", "SILKY LASTRING LIP PENCIL \n#ANTIQUE BOX", false,R.drawable.ic_item_6));
             items.add(new CosmeticModel("Estee Lauder", "Double Wear Cushion Foundation \nCool Bone", false,R.drawable.ic_item_7));
-            items.add(new CosmeticModel("CLIO", "Virgin Kiss Tinted Lip \n# 13", false,R.drawable.ic_item_9));
+            items.add(new CosmeticModel("CLIO", "Virgin Kiss Tinted Lip \n# 13", false,R.drawable.ic_item_8));
             items.add(new CosmeticModel("Make Up Forever", "Aqua Brown \n#15 Blond", false,R.drawable.ic_item_9));
             items.add(new CosmeticModel("MAC", "Mineralize Skin Finish \nLightscapade", false,R.drawable.ic_item_10));
 
