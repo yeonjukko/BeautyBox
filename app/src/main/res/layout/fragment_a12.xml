@@ -3,29 +3,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    tools:context=".layout.A12Fragment">
+    tools:context=".layout.AFragments.A12Fragment">
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="fitXY"
-        android:src="@drawable/a12"/>
+        android:src="@drawable/a12" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-        <View
-            android:id="@+id/videoView"
-            android:layout_width="match_parent"
-            android:layout_weight="1"
-            android:layout_height="match_parent">
 
-        </View>
-        <View
-            android:layout_width="match_parent"
-            android:layout_weight="1"
-            android:layout_height="match_parent"/>
-    </LinearLayout>
+    <View
+        android:id="@+id/videoView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:layout_weight="1"></View>
+
 
 </FrameLayout>

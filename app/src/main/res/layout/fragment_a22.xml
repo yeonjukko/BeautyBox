@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    tools:context=".layout.A22Fragment">
+    tools:context=".layout.AFragments.A22Fragment">
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
