@@ -2,6 +2,7 @@ package com.beautybox;
 
 import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.Toast;
 
 import com.tsengvn.typekit.TypekitContextWrapper;
 
@@ -18,4 +19,6 @@ public class BeautyBoxActivity extends AppCompatActivity {
         super.attachBaseContext(TypekitContextWrapper.wrap(newBase));
 
     }
+
+
 }

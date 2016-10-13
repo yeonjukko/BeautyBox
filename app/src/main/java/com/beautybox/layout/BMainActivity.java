@@ -12,6 +12,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.beautybox.BeautyBoxActivity;
 import com.beautybox.R;
 import com.beautybox.layout.AFragments.A1Fragment;
 import com.beautybox.layout.AFragments.A2Fragment;
@@ -23,7 +24,7 @@ import com.beautybox.layout.BFragments.B3Fragment;
 import static com.beautybox.BeautyBoxApplication.MODE_B;
 import static com.beautybox.BeautyBoxApplication.SP_PREVIOUS_MODE;
 
-public class BMainActivity extends AppCompatActivity {
+public class BMainActivity extends BeautyBoxActivity {
     private static final int PAGE_SIZE = 3;
     private ViewPager mViewPager;
 

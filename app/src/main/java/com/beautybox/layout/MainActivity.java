@@ -17,7 +17,6 @@ import static com.beautybox.BeautyBoxApplication.SP_PREVIOUS_MODE;
 public class MainActivity extends BeautyBoxActivity implements View.OnClickListener {
     LinearLayout linearLayoutSwitchMode;
     ImageView imageView;
-
     SharedPreferences sharedPreferences;
 
     String mode;
@@ -32,6 +31,8 @@ public class MainActivity extends BeautyBoxActivity implements View.OnClickListe
 
         imageView = (ImageView) findViewById(R.id.imageView);
         setImageView();
+
+        startActivity(new Intent(MainActivity.this,BluetoothActivity.class));
 
         linearLayoutSwitchMode = (LinearLayout) findViewById(R.id.linearLayoutSwitchMode);
         linearLayoutSwitchMode.setOnClickListener(this);
